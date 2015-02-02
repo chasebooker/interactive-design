@@ -1,0 +1,111 @@
+
+	@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
+	#warnings { 
+		
+	}
+
+	body {
+		font-family: 'Libre Baskerville', serif;
+		font-size: 14px;
+		-webkit-font-smoothing: antialiased;
+		background-image: url("images/treats.jpg");
+		background-attachment: fixed;
+		line-height: 1.5em;
+	}
+
+	.container {
+		background-color: white;
+		margin: 3em;
+		padding: 1em;
+	}
+
+	.table-of-contents {
+		text-align: center;
+	}
+
+	.number {
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a:link {
+		color: #99CCFF;
+	}
+
+	a:visited {
+		color: #660066;
+	}
+
+	h1 {
+		font-size: 3em;
+		line-height: 1em;
+		font-style: italic;
+		color: blue;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 2em;
+		color: red;
+		text-align: center;
+		margin-top: 2em;
+	}
+	.table-of-contents {
+		font-weight: bold;
+	}
+
+	h3 {
+		font-style: italic;
+		text-align: center;
+	}
+
+	ol {
+		display: block;
+		list-style-type: none;
+		list-style-position: inside;
+		padding: 1em;
+	}
+
+	ul {
+		margin: 2em;
+		padding: 2em;
+		font-size:.75em;
+		list-style-type: none;
+	}
+
+	ul.sublist {
+		margin: 2em;
+		padding: 2em;
+		border-style: dashed;
+		border-width: 3px;
+		border-color: #333333;
+		font-size:.75em;
+		list-style-type: none;
+	}
+	
+	li {
+		margin-bottom: 1em;
+	}
+
+	.container {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.bulleted-list {
+		list-style-type: circle;
+	}
+
+	.numbered-list {
+		list-style-type: decimal;
+		font-size: .75em;
+	}
