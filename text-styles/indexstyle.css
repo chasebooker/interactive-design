@@ -1,0 +1,12 @@
+body {
+	font-family: Courier New, Courier, monospace;
+	color: #333333;
+}
+
+a:link {
+	color: #999999;
+}
+
+a:visited {
+	color: #666666;
+	}
