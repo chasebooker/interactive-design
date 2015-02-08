@@ -1,0 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:600,600italic);
+
+body.one {
+	font-family: 'Crimson Text', 'Times New Roman', Georgia, serif;
+	font-weight: 600;
+}
+ em.one {
+ 	font-style: italic;
+ }
