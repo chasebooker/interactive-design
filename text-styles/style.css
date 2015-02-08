@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text:600,600italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:900italic,900);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:600,400);
 
 /* INDEX STYLES */
 
@@ -358,3 +360,200 @@ body.six strong {
 }
 
 /* PAGINA SEPTIMA */
+
+body.seven {
+	font-family: Merriweather,Georgia,Cambria,"Times New Roman",Times,serif;
+	letter-spacing: 0.01rem;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 1.75;
+	color: rgba(0,0,0,0.8);
+}
+
+body.seven header {
+	padding-top: 75px;
+	display: block;
+	background-image: url("bg7.jpg");
+	margin: 0 0 3em 0;
+	word-wrap: break-word;
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+}
+
+body.seven h1 {
+	font-family: "Lato","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	letter-spacing: -0.02em;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 60px;
+	margin-left: -3px;
+	line-height: 1;
+	letter-spacing: -0.04em;
+	margin-top: 40px;
+	padding-top: 0;
+	margin-bottom: 8px;
+	letter-spacing: .5px;
+}
+
+body.seven h3 {
+	font-weight: 300;
+}
+
+body.seven .maintext {
+	width: 700px;
+	margin: 0 auto;
+}
+
+body.seven blockquote {
+	font-family: Merriweather,Georgia,Cambria,"Times New Roman",Times,serif;
+	letter-spacing: 0.01rem;
+	font-weight: 300;
+	font-style: italic;
+	border-left: 3px solid rgba(0,0,0,0.8);
+	padding-left: 20px;
+	margin-left: -23px;
+	padding-bottom: 3px;
+}
+
+body.seven hr {
+	display: block;
+	width: 100px;
+	margin: 51px auto 41px auto;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+/* PAGINA OCTAVA */
+
+body.eight {
+	font-family: Merriweather, Georgia, serif;
+	font-size: 19px;
+	line-height: 32px;
+	margin-bottom: 42px;
+	font-weight: 400;
+}
+
+body.eight h1 {
+	color: #035A6D;
+	font-family: 'Oswald',Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 38px;
+	margin: 0;
+}
+
+body.eight h2 {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 34px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+body.eight h3 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #6f6f6f;
+	font-family: 'Oswald',Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body.eight h4 {
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: #666;
+}
+
+body.eight header {
+	text-align: center;
+}
+
+body.eight strong {
+	float: left;
+	color: #000;
+	font-size: 146px;
+	line-height: 102px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 3px;
+	font-family: 'Quattrocento',serif;
+	margin-bottom: -6px;
+}
+
+body.eight .maintext {
+	margin-left: 200px;
+	width: 700px;
+
+}
+
+body.eight p {
+	float:left;
+}
+
+body.eight blockquote {
+	float: none;
+	font-size: 25px;
+	line-height: 33px;
+	margin-bottom: 30px;
+	font-style: italic;
+	color: #6f6f6f;
+	font-weight: 300;
+}
+
+/* PAGINA NONA */
+
+body.nine {
+	background-color: #DDDDDD;
+	font-size: 13pt;
+}
+
+body.nine .text {
+	width: 420px;
+	padding: 20px 20px 20px 40px;
+	background: #fff;
+	margin: 150px 40px 30px 0;
+
+}
+
+body.nine h1 {
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	line-height: 1.1em;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+body.nine h3 {
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+body.nine h4 {
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: #666666;
+}
+
+body.nine p {
+	margin-bottom: 20px;
+	line-height: 1.6em;
+	font-size: 1em;
+}
+
+body.nine #author {
+	text-decoration: underline;
+}
+
+body.nine blockquote {
+	font-weight: bold;
+	text-indent: 0px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6em;
+}
