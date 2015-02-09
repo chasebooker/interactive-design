@@ -930,3 +930,66 @@ body.fourteen strong {
 body.fourteen p {
 	line-height: 1.6;
 }
+
+/* PAGINA QUINTADECIMA */
+
+body.fifteen {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body.fifteen .text {
+	width: 482px;
+	margin-left: 3em;
+}
+
+body.fifteen h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+body.fifteen .nav {
+	text-transform: uppercase;
+	color: #999;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	font-weight: bold;
+	padding: .5em 0;
+	letter-spacing: -1px;
+}
+
+body.fifteen h2 {
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 31px;
+	letter-spacing: -1px;
+}
+
+body.fifteen h3 {
+	font-size: 13px;
+	line-height: 15px;
+	color: #999;
+	font-weight: normal;
+}
+
+body.fifteen h4 {
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+body.fifteen p {
+	font-size: 13px;
+	line-height: 15px;
+}
+
+body.fifteen strong {
+	font-weight: normal;
+}
+
+body.fifteen blockquote {
+	font-size: 13px;
+	line-height: 15px;
+	margin: 0;
+	padding: 0;
+}
