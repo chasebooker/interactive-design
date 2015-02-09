@@ -938,8 +938,15 @@ body.fifteen {
 }
 
 body.fifteen .text {
-	width: 482px;
 	margin-left: 3em;
+}
+
+body.fifteen .maintext {
+	width: 482px;
+}
+
+body.fifteen header {
+	margin-right: 3em;
 }
 
 body.fifteen h1 {
