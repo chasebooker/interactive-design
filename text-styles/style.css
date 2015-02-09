@@ -5,6 +5,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:900italic,900);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:600,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic);
 
 /* INDEX STYLES */
 
@@ -26,6 +28,11 @@ body.index a:visited {
 
 body.index h1 {
 	font-size: 2em;
+}
+
+body.index em {
+	font-style: normal;
+	text-decoration: underline;
 }
 
 body.index .container {
@@ -556,4 +563,318 @@ body.nine blockquote {
 	margin: 0;
 	padding: 0;
 	line-height: 1.6em;
+}
+
+/* PAGINA DECIMA */
+
+body.ten {
+	font-size: 14px;
+}
+
+body.ten header:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('7bg.jpg') repeat-x top center;
+	width: 100%;
+	z-index: 1;
+	height: 11.25rem;
+}
+
+body.ten .text {
+	width: 680px;
+}
+
+body.ten .maintext {
+	padding-left: 3em;
+}
+
+body.ten h4 {
+	font-size: 1.125rem;
+	margin-right: 2.5rem;
+	display: inline-block;
+	color: #FF016C;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.25rem;
+	margin: 0.9375rem 0;
+}
+
+body.ten .extra {
+	position: relative;
+	height: 3.125rem;
+	float: left;
+}
+
+body.ten .author {
+	border-top: 1px #333333;
+	display: block;
+	font-family: "TiemposTextWeb-Regular",Georgia,serif;
+	color: #767676;
+	font-style: normal;
+}
+
+body.ten h1 {
+	background-color: #fff;
+	color: #000;
+	vertical-align: middle;
+	display: inline;
+	font-size: 3.625rem;
+	line-height: 4rem;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	float:left;
+}
+
+body.ten h3 {
+	font-weight: normal;
+	font-size: 1em;
+	font-style: italic;
+	white-space: nowrap;
+}
+
+body.ten p {
+	margin-top: 2.5rem;
+	font-size: 1rem;
+	color: #3C3C3C;
+	font-family: "TiemposTextWeb-Regular",Georgia,serif;
+	line-height: 1.618em;
+}
+
+body.ten blockquote {
+	font-size: 1.125rem;
+	color: #3C3C3C;
+	line-height: 1.75rem;
+	margin-bottom: 0.3125rem;
+}
+
+/* PAGINA UNDECIMA */
+
+body.eleven {
+	font-family: Helvetica, Arial, serif;
+}
+
+body.eleven h1 {
+	color: #5f4dff;
+	font-size: 40px;
+	line-height: 45px;
+	font-family: "Times New Roman", serif;
+	font-weight: normal;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+}
+
+body.eleven h2 {
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 8px;
+	font-family: Helvetica, Arial, serif;
+	font-weight: normal;
+	font-color: black;
+}
+
+body.eleven h3 {
+	font-size: 11px;
+	color: #333;
+	font-family: Helvetica, Arial, serif;
+	font-weight: normal;
+}
+
+body.eleven .maintext {
+	width: 556px;
+}
+
+body.eleven p {
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color: #333;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+body.eleven blockquote {
+	margin: 0 0px 20px;
+	padding: 9px 30px 0 19px;
+	border-left: 1px solid #ddd;
+	font-size: 14px;
+	line-height: 24px;
+	color: #777;
+}
+
+body.eleven h4 {
+	color: #5f4dff;
+	font-family: "Times New Roman", serif;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+/* PAGINA DUODECIMA */
+
+body.twelve {
+	margin: 0 auto;
+	background: #e9e9e9;
+}
+
+body.twelve .text {
+	display: block;
+	padding: 45px 44px;
+	padding-top: 12px;
+	min-height: 250px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+body.twelve header {
+	margin: 0;
+	padding: 0;
+	width: 638px;
+	height: 319px;
+	position: relative;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+	font-family: "Helvetica", Arial, sans-serif;
+	background-color: white;
+	padding: 1em;
+}
+
+body.twelve h1 {
+	margin-left: 50%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+body.twelve h2 {
+	margin-left: 50%;
+	font-size: 20px;
+	font-weight: normal;
+	font-color: #555;
+}
+
+body.twelve h3 {
+	margin-left: 50%;
+	color: #888;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+body.twelve .maintext {
+	margin: 0;
+	padding: 18px;
+	line-height: 24px;
+	font-family: Georgia,serif;
+	font-size: 15px;
+	background-color: #fff;
+	margin: 0 0 12px 0;
+	padding: 0;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+	width: 638px;
+	padding: 1em;
+}
+
+body.twelve strong {
+	color: #ef4135;
+	font-weight: normal;
+}
+
+body.twelve blockquote {
+	display: block;
+	margin: 18px 18px 0 18px;
+	padding: 18px;
+	color: #555;
+	font-size: 15px;
+	background-color: #f4f4f4;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+/* PAGINA TERTIADECIMA */
+
+body.thirteen {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body.thirteen .text {
+	border-left: 1px;
+	border-left-color: #999999;
+	border-left-style: solid;
+}
+
+body.thirteen h1 {
+	font-family: "Roboto Slab", Georgia, serif;
+	font-size: 2.75rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+body.thirteen h3 {
+	font-family: "Roboto Slab", Georgia, serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+body.thirteen .author {
+	color: #fa4b2a;
+}
+
+body.thirteen header {
+	margin-top: 2em;
+	border-top: 1px;
+	border-top-style: solid;
+	border-top-color: #999999;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-right: 1px;
+	border-right-color: #999999;
+	border-right-style: solid;
+	padding: 1rem;
+	width: 700px;
+}
+
+body.thirteen .maintext {
+	padding-bottom: 24px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 24px;
+	width: 575px;
+	border-right: 1px;
+	border-right-color: #999999;
+	border-right-style: solid;
+}
+
+body.thirteen p {
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: 1.5rem 0;
+	line-height: 1.7;
+	font-size: 16px;
+}
+
+body.thirteen strong {
+	font-weight: normal;
+	color: rgb(250, 75, 42);
+}
+
+body.thirteen h4 {
+	font-weight: normal;
+	color: rgb(250, 75, 42);
+}
+
+body.thirteen blockquote {
+	float: right;
+	margin-right: 0;
+	max-width: 40%;
+	text-align: left;
+	font-size: 2.25rem;
+	margin: 2.25rem 2.25rem 2rem;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	color: #fa4b2a;
+	font-family: "Open Sans Condensed", Helvetica, sans-serif;
 }
