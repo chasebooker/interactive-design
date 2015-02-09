@@ -7,6 +7,8 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:600,400);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,600,700,500);
 
 /* INDEX STYLES */
 
@@ -877,4 +879,54 @@ body.thirteen blockquote {
 	text-transform: uppercase;
 	color: #fa4b2a;
 	font-family: "Open Sans Condensed", Helvetica, sans-serif;
+}
+
+/* PAGINA QUARTADECIMA */
+
+body.fourteen {
+	font-family: "Hind", sans-serif;
+}
+
+body.fourteen .text {
+	width: 540px;
+	margin-bottom: 10px;
+	margin-left: 6em;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+body.fourteen h4 {
+	font-family: "Courier New," courier;
+	font-size: 11px;
+	margin: 0 0 8px 0;
+	text-transform: uppercase;
+	color: #08109f;
+	margin-bottom: 2em;
+}
+
+body.fourteen h1 {
+	font-family: "Muli", sans-serif;
+	font-size: 65px;
+	margin: 0;
+	line-height: 1;
+	font-style: normal;
+	letter-spacing: -2px;
+}
+
+body.fourteen h3 {
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+body.fourteen .author {
+	text-decoration: underline;
+}
+
+body.fourteen strong {
+
+}
+
+body.fourteen p {
+	line-height: 1.6;
 }
