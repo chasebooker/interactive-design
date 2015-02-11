@@ -1,0 +1,73 @@
+body {
+	height: 5000px;
+	background: #222;
+}
+
+@font-face {
+    font-family: 'osp-dindin';
+    src: url('osp-din/osp-din-webfont.eot');
+    src: url('osp-din/osp-din-webfont.eot?#iefix') format('embedded-opentype'),
+         url('osp-din/osp-din-webfont.woff2') format('woff2'),
+         url('osp-din/osp-din-webfont.woff') format('woff'),
+         url('osp-din/osp-din-webfont.ttf') format('truetype'),
+         url('osp-din/osp-din-webfont.svg#osp-dindin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-container {
+	position: relative;
+	height: 100%;
+}
+
+.how-to-portal {
+	display: inline-block;
+	vertical-align: bottom;
+	height: 200px;
+	width: 200px;
+	background: lightblue;
+	margin: 20px;
+	border: 5px solid aliceblue;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.decor-fixed {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	border: 5px dotted yellow;
+}
+
+.decor-absolute {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	border: 5px solid orange;
+}
+
+.decor-relative {
+	position: relative;
+	border: 5px solid green;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+h1 {
+	font-family: "osp-dindin", sans-serif;
+	font-size: 4em;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	margin: 0;
+	color: white;
+}
+
+.title {
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
