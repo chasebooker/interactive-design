@@ -15,21 +15,30 @@
 body.index {
 	font-family: 'Courier New', Courier, monospace;
 	background-color: #333333;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: center;
 	line-height: 2em;
 }
 
+body.index a {
+	text-decoration: none;
+	transition: color 1s ease;
+}
+
 body.index a:link {
-	color: orange;
+	color: black;
 }
 
 body.index a:visited {
-	color: green;
+	color: lightgray;
 	}
 
+body.index a:hover {
+	color: white;
+}
+
 body.index h1 {
-	font-size: 2em;
+	font-size: 1em;
 }
 
 body.index em {
@@ -40,9 +49,9 @@ body.index em {
 body.index .container {
 	background-color: white;
 	display: block;
-	width: 600px;
+	width: 200px;
 	height: 100%;
-	margin: 0 auto;
+	margin: 50px auto;
 	padding: 1em 2em 2em 2em;
 }
 
