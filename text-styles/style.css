@@ -1103,12 +1103,17 @@ body.seventeen {
 body.seventeen h1, body.seventeen h2, body.seventeen h3, body.seventeen h4 {
 	font-family: monospace;
 	font-size: 14px;
+	font-weight: normal;
 }
 
-/*body.seventeen .maintext {
+body.seventeen strong {
+	font-weight: normal;
+}
+
+body.seventeen .maintext {
 	width: 600px;
 	margin: 0 auto;
-}*/
+}
 
 body.seventeen .text {
 	width: 700px;
@@ -1136,7 +1141,7 @@ body.seventeen .maintext {
 body.seventeen .maintext:hover {
 	border-radius: 5px;
 	height: 100%;
-	width: 600px;
+	width: 500px;
 	/*position: absolute;*/
 }
 
