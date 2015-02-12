@@ -1000,3 +1000,147 @@ body.fifteen blockquote {
 	margin: 0;
 	padding: 0;
 }
+
+/* PAGINA SEXTADECIMA */
+
+body.sixteen {
+	background: black;
+	background-image: url("stars.jpg");
+}
+
+body.sixteen .text {
+	margin: 0 auto;
+	width: 800px;
+}
+
+body.sixteen p, body.sixteen blockquote {
+	transition: color .25s ease;
+	color: black;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+/*body.sixteen blockquote em {
+	color: black;
+}*/
+
+body.sixteen p:hover {
+	color: white;
+}
+
+body.sixteen blockquote:hover {
+	color: white;
+}
+
+body.sixteen h1 {
+	color: white;
+	transition: color .25s ease;
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	font-family: serif;
+/*	text-decoration: underline;*/
+}
+
+body.sixteen h2 {
+	color: white;
+	transition: color .25s ease;
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	font-family: serif;
+/*	text-decoration: underline;*/
+}
+
+body.sixteen h3 {
+	color: white;
+	transition: color .25s ease;
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+	font-family: serif;
+/*	text-decoration: underline;*/
+}
+
+
+body.sixteen h1:hover {
+	color: black;
+}
+
+body.sixteen h2:hover {
+	color: black;
+}
+
+body.sixteen h3:hover {
+	color: black;
+}
+
+body.sixteen h4:hover {
+	color: black;
+}
+
+body.sixteen em {
+	color: white;
+}
+
+/* PAGINA SEPTIMADECIMA */
+/* ): TOADALLY BROKEN :( */
+
+body.seventeen {
+	background: #d3d3d3;
+	font-family: monospace;
+}
+
+body.seventeen h1, body.seventeen h2, body.seventeen h3, body.seventeen h4 {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+/*body.seventeen .maintext {
+	width: 600px;
+	margin: 0 auto;
+}*/
+
+body.seventeen .text {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+
+body.seventeen .maintext {
+	margin: 0 auto;
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	border-radius: 100%;
+	display: inline-block;
+	transition-property: border-radius, height, width;
+	/*transition-duration: 1s;*/
+	overflow: hidden;
+	/* centering? */
+	margin: auto;
+	position: static;
+	padding: 1em;
+}
+
+body.seventeen .maintext:hover {
+	border-radius: 5px;
+	height: 100%;
+	width: 600px;
+	/*position: absolute;*/
+}
+
+/* PAGINA OCTADECIMA */
+
+
+
+body.eighteen {
+	background: lightgray;
+	font-size: 12px;
+}
+
+body.eighteen .maintext {
+	margin-left: -3em;
+	overflow: hidden;
+	clear: both;

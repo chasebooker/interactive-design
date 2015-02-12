@@ -1,20 +1,29 @@
+.transitioner {
+	background-color: white;
+	transition-property: background-color;
+	transition-property: color;
+	transition-duration: 1s;
+	transition-timing-funtion: ease;
+}
+
 a:link {
-	color: #696969;
+	color: #999;
 }
 
 a:visited {
-	color: #333333;
+	color: #666;
 }
 
-a:hover {
+.transitioner:hover {
 	color: black;
-	background: black;
+	background-color: black;
 }
 
 p {
 	font-family: Helvetica, Arial, sans-serif;
 	letter-spacing: 3px;
 	text-transform: lowercase;
+	background-color: white;
 	/*text-align: center;*/
 }
 
