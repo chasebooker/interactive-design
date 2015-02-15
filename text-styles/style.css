@@ -205,10 +205,24 @@ body.three .lime-underline {
 	border-bottom: 2px solid #0f0;
 }
 
+body.three a {
+	text-decoration: none;
+	color: #006000;
+}
+
 body.three .maintext {
 	width: 718px;
 	float: center;
 	margin: 0 auto;
+}
+
+body.three .cover-items {
+	text-align: center;
+	width: 500px;
+	height: 200px;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+	position: absolute;
 }
 
 /* PAGINA QUARTA */
@@ -218,6 +232,15 @@ body.four {
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+body.four .cover-items {
+	text-align: center;
+	width: 500px;
+	height: 200px;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+	position: absolute;
 }
 
 body.four h1 {
@@ -1029,6 +1052,21 @@ body.sixteen p, body.sixteen blockquote {
 	line-height: 35px;
 }
 
+body.sixteen a {
+	color: white;
+	text-decoration: none;
+}
+
+body.sixteen .cover-contents {
+	width: 500px;
+	height: 100px;
+	margin: auto auto;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+
+	margin: auto;
+}
+
 /*body.sixteen blockquote em {
 	color: black;
 }*/
@@ -1110,10 +1148,10 @@ body.seventeen strong {
 	font-weight: normal;
 }
 
-body.seventeen .maintext {
+/*body.seventeen .maintext {
 	width: 600px;
 	margin: 0 auto;
-}
+}*/
 
 body.seventeen .text {
 	width: 700px;
@@ -1136,6 +1174,15 @@ body.seventeen .maintext {
 	margin: auto;
 	position: static;
 	padding: 1em;
+}
+
+body.seventeen .centerer {
+	text-align: center;
+}
+
+body.seventeen a {
+	color: black;
+	font-style: normal;
 }
 
 body.seventeen .maintext:hover {
@@ -1294,4 +1341,15 @@ body.twenty .absolute-image {
 	left: 0px;
 	z-index: 1;
 
+}
+
+body.twenty a {
+	color: white;
+}
+
+body.twenty .cover-items {
+	height: 1000px;
+	width: 500px;
+	padding-top: 500px;
+	text-align: right;
 }
