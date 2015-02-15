@@ -1149,7 +1149,7 @@ body.seventeen .maintext:hover {
 
 
 
-body.eighteen {
+/*body.eighteen {
 	background: lightgray;
 	font-size: 12px;
 }
@@ -1157,4 +1157,141 @@ body.eighteen {
 body.eighteen .maintext {
 	margin-left: -3em;
 	overflow: hidden;
-	clear: both;
+	clear: both;*/
+
+/* NINETEEN */
+
+body.nineteen {
+	color: black;
+	font-size: 15px;
+	line-height: 1.2em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body.nineteen .text {
+	width: 500px;
+}
+
+body.nineteen h1 {
+	color: blue;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+body.nineteen h1:hover {
+	color: white;
+	background: black;
+}
+
+body.nineteen h2 {
+	color: black;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+body.nineteen h2:hover {
+	color: white;
+	background: black;
+}
+
+body.nineteen h3 {
+	color: purple;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+body.nineteen h3:hover {
+	color: white;
+	background: black;
+}
+
+body.nineteen h4 {
+	color: black;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+body.nineteen em {
+	text-transform: uppercase;
+	font-style: normal;
+	color: red;
+}
+
+body.nineteen em:hover {
+	color: white;
+	background: black;
+}
+
+body.nineteen strong {
+	font-weight: normal;
+}
+
+body.nineteen blockquote {
+	margin: 0;
+}
+
+/* twenny */
+
+body.twenty {
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body.twenty .text {
+	width: 500px;
+	margin-left: auto;
+}
+
+body.twenty header {
+	text-align: center;
+}
+
+body.twenty h1 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+body.twenty h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+body.twenty h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+body.twenty h4 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+body.twenty .fixed-image {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+
+}
+
+body.twenty .absolute-image {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	z-index: 1;
+
+}
