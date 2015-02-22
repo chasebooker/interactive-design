@@ -10,6 +10,49 @@
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Hind:400,600,700,500);
 
+/* NAV BUTTONS */
+
+#next_button {
+	width: 50px;
+	height: 18px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	background: white;
+	color: black;
+	text-align: center;
+	vertical-align: center;
+	line-height: 19px;
+	letter-spacing: 2px;
+}
+
+#prev_button {
+	width: 50px;
+	height: 18px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	background: white;
+	color: black;
+	text-align: center;
+	line-height: 19px;
+	letter-spacing: 2px;
+}
+
+#next_button a {
+	color: black;
+	text-decoration: none;
+}
+
+#prev_button a {
+	color: black;
+	text-decoration: none;
+}
+
 /* INDEX STYLES */
 
 body.index {
@@ -79,6 +122,17 @@ body.one header {
 	background-color: #F6F6F6;
 }
 
+body.one .coverbox {
+	background-color: #F6F6F6;
+	width: 500px;
+	height: 250px;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	padding: 35px 30px 10px 30px;
+	position: fixed;
+}
+
 body.one h1 {
 	color: #000000;
 	font-family: 'Crimson Text', serif;
@@ -86,6 +140,12 @@ body.one h1 {
 	font-weight: 700;
 	line-height: 1.4em;
 	text-align: center;
+	margin: 0;
+}
+
+body.one a, body.one a:visited, body.one a:hover, body.one a:active {
+	color: inherit;
+	text-decoration: none;
 }
 
 body.one h2 {
@@ -104,6 +164,7 @@ body.one h3 {
 	font-weight: 700;
 	color: #E52F25;
 	font-size: 17;
+	margin: none;
 }
 
 body.one blockquote {
@@ -142,6 +203,24 @@ body.two .text {
 	margin: 0 auto;
 	background-color: white;
 	padding: 20px 20px;
+}
+
+body.two .cover {
+	width: 600px;
+	height: 130px;
+	padding-left: 60px;
+	margin: auto;
+	background-color: white;
+	padding: 20px 20px;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	border: 2px black dashed;
+	/*transform: translateY(-50%);*/
+}
+
+body.two a, body.two a:visited, body.two a:hover, body.two a:active {
+	color: inherit;
+	text-decoration: none;
 }
 
 body.two h1 {
@@ -298,6 +377,21 @@ body.five header {
 	border-bottom: 1px dashed;
 }
 
+body.five footer {
+	position: absolute;
+	bottom: 0;
+}
+
+body.five a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body.five a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
 body.five h3 {
 	font-family: helvetica, arial, sans-serif;
 	font-weight: bold;
@@ -378,6 +472,20 @@ body.six .text {
 body.six .maintext {
 	width: 600px;
 	padding-top: 2em;
+	background: #f5f2ed;
+}
+
+body.six .cover {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	
+	vertical-align: center;
+}
+
+body.six .nailed {
+	position: fixed;
+	bottom: 10;
 }
 
 body.six header {
@@ -398,6 +506,17 @@ body.six strong {
 	font-size: 2em;
 	float: left;
 	margin-right:10px;
+}
+
+body.six .image {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;   
+}
+
+body.six a, body.six a:visited {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* PAGINA SEPTIMA */
@@ -464,6 +583,17 @@ body.seven hr {
 	margin: 51px auto 41px auto;
 	border: 0;
 	border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+body.seven .bigimage {
+	position: fixed;
+	top: 50%;
+	left: -5%;
+}
+
+body.seven a, body.seven a:visited {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* PAGINA OCTAVA */
@@ -535,6 +665,52 @@ body.eight p {
 	float:left;
 }
 
+body.eight a, body.eight a:visited {
+	color: #fca592;
+	text-decoration: none;
+}
+
+/*body.eight .clip-circle {
+	position: absolute;
+	z-index: 100;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	overflow: hidden;
+	top: 0; right: 0; left: 0; bottom: 0;
+	margin: 0 auto;
+	vertical-align: middle;
+}*/
+
+body.eight .nailed {
+	position: absolute;
+	bottom: 20px;
+	transform: rotate(4deg);
+}
+
+body.eight .cover {
+	width: 110%;
+	height: 110%;
+	overflow: hidden;
+	position: fixed;
+	margin: -2%;
+	padding: 0;
+}
+
+body.eight .enlarger {
+	font-size: 8.5em;
+	line-height: 1em;
+
+}
+
+body.eight .image {
+	position: fixed;
+	/*margin: 0 auto;*/
+	top: 50%; left: 50%;
+	margin-top: -331px;
+	margin-left: -331px;
+}
+
 body.eight blockquote {
 	float: none;
 	font-size: 25px;
@@ -598,6 +774,19 @@ body.nine blockquote {
 	padding: 0;
 	line-height: 1.6em;
 }
+
+body.ninecover .centered {
+	position: fixed;
+	/*margin: 0 auto;*/
+	top: 50%; left: 50%;
+	margin-top: -183.5px;
+	margin-left: -250px;
+}
+
+body.ninecover .centered:hover {
+	transform: rotate(3deg);
+}
+
 
 /* PAGINA DECIMA */
 
@@ -683,6 +872,70 @@ body.ten blockquote {
 	margin-bottom: 0.3125rem;
 }
 
+body.ten .cover {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	padding: 0;
+}
+
+body.ten .covercover {
+	/*width: 100px;
+	height: 100px;*/
+	background-color: white;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	transform: rotate(45deg);
+	left: 175px;
+	top: 40%;
+	border: 3px;
+	border-style: solid;
+	border-color: blue;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+body.ten .covercover2 {
+	/*width: 100px;
+	height: 100px;*/
+	background-color: white;
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	transform: rotate(-15deg);
+	left: -10px;
+	bottom: 40%;
+	border: 3px;
+	border-style: solid;
+	border-color: red;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+body.ten .coloroverrideblue {
+	color: blue;
+}
+
+body.ten .coloroverridered {
+	color: red;
+}
+
+body.ten a {
+	text-decoration: none;
+}
+
+body.ten #bottom_fade {
+	width: 100%;
+	height: 200px;
+	z-index: 99;
+	position: fixed;
+	bottom: 0px;
+	background: url("bottom-fade.png") bottom center;
+}
+
 /* PAGINA UNDECIMA */
 
 body.eleven {
@@ -707,6 +960,7 @@ body.eleven h2 {
 	font-family: Helvetica, Arial, serif;
 	font-weight: normal;
 	font-color: black;
+	color: inherit;
 }
 
 body.eleven h3 {
@@ -714,6 +968,7 @@ body.eleven h3 {
 	color: #333;
 	font-family: Helvetica, Arial, serif;
 	font-weight: normal;
+	color: inherit;
 }
 
 body.eleven .maintext {
@@ -730,6 +985,7 @@ body.eleven p {
 	color: #333;
 	font-size: 14px;
 	line-height: 24px;
+	color: inherit;
 }
 
 body.eleven blockquote {
@@ -739,13 +995,23 @@ body.eleven blockquote {
 	font-size: 14px;
 	line-height: 24px;
 	color: #777;
+	color: inherit;
 }
 
 body.eleven h4 {
 	color: #5f4dff;
+	color: inherit;
 	font-family: "Times New Roman", serif;
 	font-weight: normal;
 	text-transform: lowercase;
+}
+
+body.eleven .maintext_white {
+	color: white;
+}
+
+body.eleven ::selection {
+	background: black;
 }
 
 /* PAGINA DUODECIMA */
@@ -824,6 +1090,79 @@ body.twelve blockquote {
 	background-color: #f4f4f4;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+}
+
+body.twelvecover {
+	background: black;
+}
+
+body.twelvecover .bgimage {
+	position: fixed;
+	z-index: -10;
+	top: -15%;
+	left: -5%;
+}
+
+body.twelvecover #covertext1 {
+
+	color: red;
+	font-size: 5em;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: auto;
+	margin: 0 auto;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	transform: rotate(10deg);
+	z-index: 10;
+
+}
+
+body.twelvecover #covertext2 {
+
+	color: orange;
+	font-size: 5em;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: auto;
+	margin: 0 auto;
+	position: absolute;
+	top: 26%;
+	left: 11%;
+	transform: rotate(10deg);
+	z-index: 9;
+
+}
+
+body.twelvecover #covertext3 {
+
+	color: green;
+	font-size: 5em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: auto;
+	margin: 0 auto;
+	position: absolute;
+	top: 27%;
+	left: 12%;
+	transform: rotate(10deg);
+	z-index: 8;
+
+}
+
+body.twelve a {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* PAGINA TERTIADECIMA */
@@ -911,6 +1250,51 @@ body.thirteen blockquote {
 	text-transform: uppercase;
 	color: #fa4b2a;
 	font-family: "Open Sans Condensed", Helvetica, sans-serif;
+}
+
+body.thirteen .layer1 {
+	z-index: 5;
+	border: none;
+}
+
+body.thirteen .layer2 {
+	transform: rotate(5deg);
+	z-index: 4;
+	border: none;
+}
+
+body.thirteen .layer3 {
+	transform: rotate(10deg);
+	z-index: 3;
+	border: none;
+}
+
+body.thirteen .layer4 {
+	transform: rotate(15deg);
+	z-index: 2;
+	border: none;
+}
+
+body.thirteen #linker {	
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	color: #fa4b2a;
+	font-family: "Open Sans Condensed", Helvetica, sans-serif;
+	font-size: 2.25rem;
+}
+
+body.thirteen a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body.thirteen a:visited {
+	text-decoration: none;
+	color: purple;
 }
 
 /* PAGINA QUARTADECIMA */
@@ -1352,4 +1736,8 @@ body.twenty .cover-items {
 	width: 500px;
 	padding-top: 500px;
 	text-align: right;
+}
+
+body.twenty strong {
+	font-weight: normal;
 }

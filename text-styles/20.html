@@ -6,6 +6,56 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body class="twenty">
+		<script src="jquery.js"></script>
+		<script>
+			// script copied from stackoverflow thread
+			$( document ).ready(function() {
+		    var caseList = [
+		    'one.html',
+		    'two.html',
+		    'three.html',
+		    'four.html',
+		    'five.html',
+		    'six.html',
+		    'seven.html',
+		    'eight.html',
+		    'nine.html',
+		    'ten.html',
+		    'eleven.html',
+		    'twelve.html',
+		    'thirteen.html',
+		    'fourteen.html',
+		    'fifteen.html',
+		    'sixteen.html',
+		    'seventeen.html',
+		    'eighteen.html',
+		    'nineteen.html',
+		    'twenty.html'
+		];
+
+		    current=$(location).attr('pathname').substr($(location).attr('pathname').lastIndexOf("/")+1); // get current page: just last part - page name and extension
+		    if($.inArray(current, caseList)!==-1) { //check if it is in array
+		        index=$.inArray(current, caseList);
+		    }
+		    //navigate thorough pages...
+		    $( ".next" ).click(function() {
+		    if(index<caseList.length){
+		    next=caseList[index+1];
+		    window.location.href = next;
+		    }
+		    });
+
+		    $( ".prev" ).click(function() {
+		    if(index>=0){
+		    prev=caseList[index-1];
+		    window.location.href = prev;
+		    }
+		    });
+
+		    });
+		</script>
+		<div id="next_button"><a class="next">NEXT</a></div>
+		<div id="prev_button"><a class="prev">PREV</a></div>
 		<div class="text">
 			<img src="white-circle.gif" class="fixed-image">
 			<img src="black-circle.gif" class="absolute-image">
