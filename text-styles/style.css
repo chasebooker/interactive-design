@@ -382,6 +382,10 @@ body.four em {
 	text-decoration: underline;
 }
 
+body.four em:hover {
+	cursor: no-drop;
+}
+
 body.four .text {
 	width: 800px;
 	margin: 0 auto;
