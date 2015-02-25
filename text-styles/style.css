@@ -17,13 +17,15 @@
 	height: 25px;
 	/*border-radius: 50%;*/
 	background: white;
-	border: black 2px solid;
+	border: black 3px solid;
+	
 	font-family: monospace;
 	font-size: 25px;
+	font-weight: bold;
 	text-align: center;
 	vertical-align: middle;
 	position: fixed;
-	right: -12.5px;
+	right: -16px;
 	top: 50%;
 	margin-top: -12.5px;
 	z-index: 1000;
@@ -38,13 +40,15 @@
 	height: 25px;
 	/*border-radius: 50%;*/
 	background: white;
-	border: black 2px solid;
+	border: black 3px solid;
+	
 	font-family: monospace;
 	font-size: 25px;
 	text-align: center;
+	font-weight: bold;
 	vertical-align: middle;
 	position: fixed;
-	left: -12.5px;
+	left: -16px;
 	top: 50%;
 	margin-top: -12.5px;
 	z-index: 1000;
@@ -78,13 +82,15 @@
 	height: 25px;
 	/*border-radius: 50%;*/
 	background: white;
-	border: black 2px solid;
+	border: black 3px solid;
+	letter-spacing: 1px;
 	font-family: monospace;
 	font-size: 25px;
 	text-align: center;
+	font-weight: bold;
 	vertical-align: middle;
 	position: fixed;
-	bottom: -12.5px;
+	bottom: -18px;
 	right: 50%;
 	margin-right: -25px;
 	z-index: 1000;
@@ -203,7 +209,12 @@ body.one h1 {
 	margin: 0;
 }
 
-body.one a, body.one a:visited, body.one a:hover, body.one a:active {
+body.one .coverbox a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body.one .coverbox a:visited {
 	color: inherit;
 	text-decoration: none;
 }
