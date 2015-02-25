@@ -6,12 +6,11 @@ body {
 	font-family: monospace;
 }
 
-p.blocktext {
+/*p.blocktext {
 	margin: auto;
-}
+}*/
 
 .box {
-	
 	border-width: 1px;
 	border-color: black;
 	border-style: solid;
@@ -20,7 +19,8 @@ p.blocktext {
 	overflow: hidden;
 	padding: 1em;
 	position: static;
-	transition: height .25s ease;
+	margin: 10px 0;
+	transition: height 1s ease;
 	z-index: -1;
 }
 
