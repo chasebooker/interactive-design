@@ -97,6 +97,7 @@
 	line-height: 28px;
 	opacity: .25;
 	transition: opacity .125s, bottom .125s;
+	/*padding-right: 1px;*/
 }
 
 #home_button:hover {
