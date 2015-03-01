@@ -1142,6 +1142,25 @@ body.eleven ::selection {
 	background: black;
 }
 
+body.eleven .clip {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    padding: 0;
+}
+
+body.eleven .scrollable {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 15px; /* Increase this value for cross-browser compatibility */
+}
+
+body.eleven #cover-blockquote {
+	border: none;
+}
+
 /* PAGINA DUODECIMA */
 
 body.twelve {
@@ -2066,7 +2085,7 @@ body.twenty .cover-items {
 	/*padding-top: 500px;*/
 	text-align: right;
 	position: absolute;
-	top: 96%;
+	top: 95%;
 }
 
 body.twenty strong {
