@@ -20,6 +20,12 @@ p {
 	right: 5%;
 }
 
+#container {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+}
+
 #name {
-	
+
 }
