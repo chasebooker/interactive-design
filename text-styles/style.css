@@ -182,6 +182,7 @@ body.index .container {
 
 body.index .explanation-overrides {
 	line-height: 1em;
+	text-align: left;
 }
 
 body.index .explanation-overrides .a:hover {
