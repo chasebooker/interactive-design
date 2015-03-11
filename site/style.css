@@ -1,0 +1,25 @@
+body {
+	background-image: url("stars.jpg");
+	background-color: black;
+}
+
+p {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	margin: 0;	
+}
+
+.coverup {
+	color: black;
+}
+
+#moon {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+
+#name {
+	
+}
