@@ -1,0 +1,105 @@
+ <html>
+ <head>
+  <meta charset="utf-8">
+  <title>RESPONDER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <style>
+
+  body {
+    background: black;
+    color: white;
+    font-size: 120px;
+  }
+
+  p {
+
+  }
+
+  #one { display: none; }
+  #two { display: none; }
+  #three { display: none; }
+  #four { display: none; }
+  #five { display: none; }
+
+  .textcontainer {
+    height: 2em;
+    position: fixed;
+    top: 300px;
+    left: 50px;
+    text-align: left;
+  }
+
+  .rotator {
+    transform: rotate(30deg);
+  }
+
+  p {
+    font-size: 5em;
+  }
+
+  #icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .rotator {
+      transform: rotate(-10deg);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .rotator {
+      transform: rotate(-45deg);
+    }
+
+    /*.textcontainer {
+      bottom: 50;
+      right: 5;
+      top: auto;
+      left: auto;
+    }*/
+  }
+
+  @media screen and (max-width: 600px) {
+    .rotator {
+      transform: rotate(60deg);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .rotator {
+      transform: rotate(-90deg);
+      color: black;
+      -webkit-text-stroke: 1px white;
+
+      text-shadow:
+        3px 3px 0 #fff,
+       -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+       -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .rotator {
+      display: none;
+    }
+
+    body {
+      background-image: url("sluggo.jpg");
+    }
+  }
+    
+  </style>
+
+</head>
+
+<body>
+<div class="textcontainer">
+  <div class="rotator">Respond!</div>
+</div>
+
+</body>
+</html>
