@@ -1,0 +1,173 @@
+@font-face {
+	font-family: 'Wallau';
+	src: url('WallauRundgotisch-Heavy-webfont.eot'); /* IE9 Compat Modes */
+  	src: url('WallauRundgotisch-Heavy-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('WallauRundgotisch-Heavy-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('WallauRundgotisch-Heavy-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('WallauRundgotisch-Heavy-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('WallauRundgotisch-Heavy-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+	font-size: 18pt;
+	line-height: 21pt;
+	font-family: "Wallau", "Optima", Arial, sans-serif;
+	/*text-transform: uppercase;*/
+	letter-spacing: 1px;
+}
+
+h1 {
+	margin: 0;
+	color: lightblue;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 5em;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+p {
+	color: black;	
+    font-size: 1em;
+    line-height: 1em;
+}
+
+#title {
+	text-transform: uppercase;
+	text-align: justify;
+	font-size: 2em;
+	transform: rotate(-10deg);
+	position: fixed;
+	top: 1.5em;
+	z-index: -10;
+}
+
+.chair {
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -10;
+}
+
+.textcolumn {
+	width: 500px;
+	max-width: 100%;
+	background-color: white;
+	padding: .5em 1em;
+	border: 5px solid black;
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#water {
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.button {
+	display: inline;
+}
+
+#mandala {
+	position: fixed;
+	bottom: 5%;
+    left: 5%;
+	/*transform: translate(-50%, -50%);*/
+	max-width: 200px;
+	z-index: -3;
+	-webkit-animation:spin2 30s linear infinite;
+    -moz-animation:spin2 30s linear infinite;
+    animation:spin2 30s linear infinite;
+}
+
+#spinner {
+	z-index: 5;
+	position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    margin:-100px 0 0 -100px;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+}
+
+
+@media screen and (max-width: 1024px) {
+   
+}
+
+@media screen and (max-width: 768px) { 
+	background-image: none;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    .textcolumn {
+    	max-width: 100%;
+    	margin: .5em;
+    	position: relative;
+    	margin: 0 1em;
+    	border: 0;
+    	transform: translate(0,0);
+    	top: 0; left: 0;
+    }
+
+    #title {
+    	display: none;
+    }
+
+    .button {
+    /*	display: block;
+    	margin: 0;
+    	padding: 0;*/
+    }
+
+    #spinner {
+    	display: inline;
+    	position: relative;
+    	margin: none;
+    	width: 200px;
+    	height: 200px;
+    	top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    #mandala {
+    	display: inline;
+    	position: relative;
+    	margin: none;
+    	width: 200px;
+    	height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+   
+  }
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+}
+
+@-moz-keyframes spin2 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin2 { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin2 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
