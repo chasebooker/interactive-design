@@ -55,6 +55,15 @@ p {
 	z-index: -10;
 }
 
+/*.centerer {
+	max-width: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+}*/
+
 .textcolumn {
 	width: 500px;
 	max-width: 100%;
@@ -81,6 +90,16 @@ p {
 
 .button {
 	display: inline;
+}
+
+#diagram {
+	width: 500px;
+	max-width: 100%;
+	position: fixed;
+    z-index: -1;
+    -webkit-animation:spin2 30s linear infinite;
+    -moz-animation:spin2 30s linear infinite;
+    animation:spin2 30s linear infinite;
 }
 
 #mandala {
@@ -126,9 +145,18 @@ p {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
      #title {
-		font-size: 1em;
+		font-size: .5em;
+		transform: rotate(0);
+		text-align: center;
+		margin: 1em auto;
+		position: relative;
+	}
+
+	#diagram {
+		position: relative;
+		margin: 0 5%;
 	}
 
     .textcolumn {
@@ -141,31 +169,29 @@ p {
     	top: 0; left: 0;
     }
 
-    #title {
-    	display: none;
-    }
-
     .button {
-    /*	display: block;
-    	margin: 0;
-    	padding: 0;*/
+	   max-width: 100%;
+	   margin: 0 auto;
     }
 
     #spinner {
     	display: inline;
     	position: relative;
-    	margin: none;
+    	margin: 0 auto;
     	width: 200px;
     	height: 200px;
-    	top: 0; bottom: 0; left: 0; right: 0;
     }
 
     #mandala {
     	display: inline;
     	position: relative;
-    	margin: none;
+    	margin: 0 auto;
     	width: 200px;
     	height: 200px;
+    }
+
+    #chair {
+    	max-width: 100%;
     }
   }
 
