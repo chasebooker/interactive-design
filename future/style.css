@@ -33,6 +33,10 @@ p {
     line-height: 1em;
 }
 
+a, a:visited, a:active {
+	color: black;
+}
+
 #title {
 	text-transform: uppercase;
 	text-align: justify;
@@ -55,6 +59,8 @@ p {
 	z-index: -10;
 }
 
+
+
 /*.centerer {
 	max-width: 100%;
 	position: fixed;
@@ -70,7 +76,7 @@ p {
 	background-color: white;
 	padding: .5em 1em;
 	border: 5px solid black;
-	z-index: 1;
+	z-index: 100;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -93,13 +99,15 @@ p {
 }
 
 #diagram {
-	width: 500px;
-	max-width: 100%;
-	position: fixed;
-    z-index: -1;
-    -webkit-animation:spin2 30s linear infinite;
-    -moz-animation:spin2 30s linear infinite;
-    animation:spin2 30s linear infinite;
+	display: none;
+}
+
+.centerspin {
+	max-width: 500px;
+	max-height: 500px;
+	-webkit-animation:spin2 60s linear infinite;
+    -moz-animation:spin2 60s linear infinite;
+    animation:spin2 60s linear infinite;
 }
 
 #mandala {
@@ -127,6 +135,10 @@ p {
     animation:spin 30s linear infinite;
 }
 
+.smallbutton {
+	display: none;
+}
+
 
 @media screen and (max-width: 1024px) {
    
@@ -150,55 +162,119 @@ p {
 		font-size: .5em;
 		transform: rotate(0);
 		text-align: center;
-		margin: 1em auto;
+		margin: 1em auto 2em auto;
 		position: relative;
 	}
 
+	#largediagram {
+		display: none;
+	}
+
 	#diagram {
-		position: relative;
-		margin: 0 5%;
+		display: inline;
 	}
 
     .textcolumn {
     	max-width: 100%;
-    	margin: .5em;
+    	font-size: 12px;
+    	padding: 12px;
+    	border: 2px solid black;
+    	margin: 1em;
+    	margin-left: -1em;
     	position: relative;
-    	margin: 0 1em;
-    	border: 0;
     	transform: translate(0,0);
     	top: 0; left: 0;
     }
 
     .button {
-	   max-width: 100%;
-	   margin: 0 auto;
+        display: none;
     }
 
     #spinner {
-    	display: inline;
-    	position: relative;
-    	margin: 0 auto;
-    	width: 200px;
-    	height: 200px;
+    	display: none;
     }
 
     #mandala {
+    	display: none;
+    	/*bottom: auto; right: auto;
     	display: inline;
     	position: relative;
-    	margin: 0 auto;
-    	width: 200px;
-    	height: 200px;
+    	margin: 0;
+    	width: 100%;
+    	max-width: 200px;
+    	-webkit-animation: none;
+    	-moz-animation: none;
+    	animation: none;*/
+    }
+
+    .smallbutton {
+    	display: block;
+    	position: relative;
+    	margin: 0 auto 1em auto;
+    	font-size: 12px;
+    	text-align: center;
     }
 
     #chair {
     	max-width: 100%;
     }
+
+    .centerspin {
+		max-width: 100%;
+		max-height: 100%;
+		-webkit-animation:spin2 60s linear infinite;
+	    -moz-animation:spin2 60s linear infinite;
+	    animation:spin2 60s linear infinite;
+	}
   }
 
   @media screen and (max-width: 320px) {
    	#title {
 		font-size: .75em;
 	}
+	
+	#diagram {
+		position: relative;
+		margin: 0 5%;
+	}
+
+
+    .button {
+        display: none;
+    }
+
+    #spinner {
+    	display: none;
+    }
+
+    #mandala {
+    	display: none;
+    	/*bottom: auto; right: auto;
+    	display: inline;
+    	position: relative;
+    	margin: 0;
+    	width: 100%;
+    	max-width: 200px;
+    	-webkit-animation: none;
+    	-moz-animation: none;
+    	animation: none;*/
+    }
+
+    .smallbuttons {
+    	width: 50%;
+    }
+
+    .smallbuttons img {
+    	width: 100px;
+    	height: 100px;
+    }
+
+    #chair {
+    	display: inline;
+    	position: relative;
+    	max-width: 100%;
+    }
+  }
   }
 
 
