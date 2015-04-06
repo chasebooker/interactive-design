@@ -41,7 +41,7 @@ a, a:visited, a:active {
 	text-transform: uppercase;
 	text-align: justify;
 	font-size: 2em;
-	z-index: -10;
+	z-index: 10;
 	letter-spacing: 10px;
 	white-space: nowrap;
 	text-align: center;
@@ -51,7 +51,6 @@ a, a:visited, a:active {
 	transform: translate(-50%,0);
 	-webkit-transform: translate(-50%,0);
 	-ms-transform: translate(-50%,0);
-
 }
 
 .chair {
@@ -238,9 +237,11 @@ a, a:visited, a:active {
     }
 
     .centerspin {
+    	position: relative;
+    	display: inline;
 		max-width: 100%;
 		max-height: 100%;
-		margin: 0;
+		margin-left: -5%;
 		-webkit-animation:spin2 60s linear infinite;
 	    -moz-animation:spin2 60s linear infinite;
 	    animation:spin2 60s linear infinite;
