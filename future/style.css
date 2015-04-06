@@ -164,10 +164,10 @@ a, a:visited, a:active {
 
      #title {
 		font-size: .75em;
-		transform: rotate(0);
 		text-align: center;
 		margin: 1em auto 2em auto;
 		position: relative;
+		white-space: normal;
 	}
 
 	#largediagram {
@@ -238,6 +238,7 @@ a, a:visited, a:active {
   @media screen and (max-width: 320px) {
    	#title {
 		font-size: .75em;
+		white-space: normal;
 	}
 	
 	#diagram {
