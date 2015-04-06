@@ -217,6 +217,9 @@ a, a:visited, a:active {
 
     .chair {
     	max-width: 100%;
+    	position: relative;
+		transform: translate(0,0);
+		margin-left: -50%;
     }
 
     .centerspin {
