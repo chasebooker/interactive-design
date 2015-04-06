@@ -41,12 +41,11 @@ a, a:visited, a:active {
 	text-transform: uppercase;
 	text-align: justify;
 	font-size: 2em;
-	transform: rotate(-10deg);
-	position: fixed;
-	top: 1.5em;
 	z-index: -10;
 	letter-spacing: 10px;
 	white-space: nowrap;
+	text-align: center;
+	margin: 1em auto;
 }
 
 .chair {
@@ -158,6 +157,11 @@ a, a:visited, a:active {
 }
 
 @media screen and (max-width: 500px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
      #title {
 		font-size: .5em;
 		transform: rotate(0);
@@ -176,8 +180,8 @@ a, a:visited, a:active {
 
     .textcolumn {
     	max-width: 100%;
-    	font-size: 12px;
-    	padding: 12px;
+    	font-size: 14px;
+    	padding: 14px;
     	border: 2px solid black;
     	margin: 1em;
     	margin-left: -1em;
