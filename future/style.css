@@ -122,6 +122,30 @@ a, a:visited, a:active {
     animation:spin2 60s linear infinite;
 }
 
+#secondhand {
+	position: fixed;
+	bottom: 5%;
+    left: 5%;
+	/*transform: translate(-50%, -50%);*/
+	max-width: 200px;
+	z-index: -3;
+	-webkit-animation:spin 60s linear infinite;
+    -moz-animation:spin 60s linear infinite;
+    animation:spin 60s linear infinite;
+}
+
+#minutehand {
+	position: fixed;
+	bottom: 5%;
+    left: 5%;
+	/*transform: translate(-50%, -50%);*/
+	max-width: 200px;
+	z-index: -2;
+	-webkit-animation:spin 360s linear infinite;
+    -moz-animation:spin 360s linear infinite;
+    animation:spin 360s linear infinite;
+}
+
 #mandala {
 	position: fixed;
 	bottom: 5%;
@@ -145,6 +169,19 @@ a, a:visited, a:active {
     -webkit-animation:spin 30s linear infinite;
     -moz-animation:spin 30s linear infinite;
     animation:spin 30s linear infinite;
+}
+
+#spinner2 {
+	z-index: 4;
+	position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    margin:-100px 0 0 -100px;
+    -webkit-animation:spin 45s linear infinite;
+    -moz-animation:spin 45s linear infinite;
+    animation:spin 45s linear infinite;
 }
 
 .smallbutton {
