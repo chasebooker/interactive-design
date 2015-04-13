@@ -1,0 +1,55 @@
+body {
+	font-size: 14pt;
+	font-family: Arial, sans-serif;
+	line-height: 1.25em;
+}
+
+#header {
+	margin: 1em auto;
+	font-family: "Courier New", monospace;
+	font-size: 3em;
+	line-height: 1em;
+	text-transform: uppercase;
+	width: 500px;
+	text-align: center;
+}
+
+.content {
+	width: 500px;
+	margin: 300px auto 0 auto;
+}
+
+.cut {
+	background: black;
+}
+
+.cut:hover {
+	background: white;
+}
+
+.question {
+	font-weight: bold;
+	margin: 1em 0;
+}
+
+.caption {
+	color: gray;
+	text-align: center;
+	margin: 0 auto;
+	font-size: .75em;
+}
+/*
+a {
+	font-family: "Courier New", monospace;
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: purple;
+}*/
+
+img {
+	max-width: 100%;
+	margin: 1em 0 0 0;
+}
