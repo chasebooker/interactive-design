@@ -4,12 +4,18 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Pépito</title>
+	<title>WHERE'S PÉPITO</title>
 </head>
 
 <body>
 	<div id="status"></div>
-	<div id="weather"></div>
+	<div id="weather">
+		<div id="weather_text"></div>
+	</div>
+	<audio id="audio" autoplay> </audio>
+	<div id="button">
+		<img src="images/stop.png" id="button_image">
+	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/moment.js"></script>
@@ -21,13 +27,16 @@
 		  $.ajax({
 		  url : "http://api.wunderground.com/api/2148427742f34360/geolookup/conditions/q/France/Toulouse.json",
 		  dataType : "jsonp",
-		  success : function(parsed_json) {
-		  var location = parsed_json['location']['city'];
-		  var weather = parsed_json['current_observation']['weather'];
-		  console.log(weather);
+		  success : function(response) {
+		  var location = response['location']['city'];
+		  var weather = response['current_observation']['weather'];
+		  $("#weather_text").html(weather + " <em>chez</em> Pépito");
 		  }
 		  });
 		});
 	</script>
+	
+
+
 </body>
 </html>

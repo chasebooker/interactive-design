@@ -19,64 +19,88 @@ $.ajax({
 
     var collection = response.results.collection1;
 
-    var tweetContent = collection[0].lastTweet.text;
-    console.log(tweetContent);
+    var lastTweet = collection[0].lastTweet.text;
+    var currentStatus = lastTweet.split('(')[0];
+    console.log(currentStatus);
 
-    var pepitoPic = collection[0].tweetImage.src;
-    console.log(pepitoPic);
-
-    var regExp = /\(([^)]+)\)/;
-    var timestamp = regExp.exec(tweetContent)[1];
-    console.log(timestamp);  
-
-    var catStatus = tweetContent.split('(')[0];
-    console.log(catStatus);
-
-    var currentDate = moment().format();
-    console.log(currentDate);
-
-    function toTimeZone(time, zone) {
-      var format = "YYYY/MM/DD HH:mm:ss ZZ";
-      return moment(time, format).tz(zone).format(format);
+    if (currentStatus.indexOf("out") != -1) {
+      var status = "out";
+    } else if (currentStatus.indexOf("home") != -1) {
+      var status = "in";
     }
+    console.log(status);
 
-    var adjustedTime = toTimeZone(currentDate, "Europe/Paris");
-    console.log(adjustedTime);
+    var elapsedTimeType = collection[0].tweetTime.text.slice(-1);
+    console.log(elapsedTimeType);
+    var elapsedTime = collection[0].tweetTime.text;
+    console.log(elapsedTime);
 
-    function splitTime(time) {
-      var timeArray = time.split(":");
-      return timeArray;
-    }
-
-    var adjustedTimeSplit = splitTime(adjustedTime);
-    var timestampSplit = splitTime(timestamp);
-    console.log(adjustedTimeSplit, timestampSplit);
-
-    
-
-    var difference = [
-      adjustedTimeSplit[0] - timestampSplit[0],
-      adjustedTimeSplit[1] - timestampSplit[1],
-      adjustedTimeSplit[2] - timestampSplit[2]
-    ]
-    console.log(difference);
-
-    function writeStatus(status) {
-      if (status === "Pépito is out") { 
-        var outside = "Pépito has been outside for " + 
-          difference[0] + " hours and " + difference[1] + " minutes";
-        $("#status").html(outside); 
-        $("body").css("background-image", "url('images/forest.jpg')");
-      }
-      else { 
-        var inside = "Pépito has been inside for " + 
-          difference[0] + " hours and " + difference[1] + " minutes";
-        $("#status").html(inside);
-        $("body").css("background-image", "url('images/catbed.jpg')");
+    function writeStatus(a) {
+      if (a === "out") {
+        if (elapsedTimeType === "h") {
+          if (elapsedTime.slice(0,-1) === "1") {
+            var outside = "Pépito has been outside for one hour."
+          } else {
+          var outside = "Pépito has been outside for " + elapsedTime.slice(0,-1) + " hours."
+          }
+        } else if (elapsedTimeType === "m") {
+          if (elapsedTime.slice(0,-1) === "1") {
+            var outside = "Pépito has been outside for one minute."
+          } else {
+            var outside = "Pépito has been outside for " + elapsedTime.slice(0,-1) + " minutes."
+          }
+        } else {
+          var outside = "Pépito has been outside for days!"
         }
+        $("#status").html(outside);
+        $("#audio").html('<source src="audio/outside.mp3" type="audio/mpeg">');
+        $("body").css("background-image", "url('images/forest.jpg')");
+      } else if (a === "in") {
+        if (elapsedTimeType === "h") {
+          if (elapsedTime.slice(0,-1) === "1") {
+            var inside = "Pépito has been inside for one hour."
+          } else {
+          var inside = "Pépito has been inside for " + elapsedTime.slice(0,-1) + " hours."
+          }
+        } else if (elapsedTimeType === "m") {
+          if (elapsedTime.slice(0,-1) === "1") {
+            var inside = "Pépito has been inside for one minute."
+          } else {
+            var inside = "Pépito has been inside for " + elapsedTime.slice(0,-1) + " minutes."
+          }
+        } else {
+          var inside = "Pépito has been inside for days!"
+        }
+        $("#status").html(inside); 
+        $("#audio").html('<source src="audio/inside.mp3" type="audio/mpeg">');
+        $("body").css("background-image", "url('images/catbed.jpg')");
+      }
     }
 
-    writeStatus(catStatus);
+    writeStatus(status);
+
+    var audioStatus = true;
+
+    $("#button").click(function() {
+      if (audioStatus === true) {
+        $("#audio").each(function() {
+          this.pause();
+          this.currentTime = 0;
+          $("#button_image").attr("src","images/play.png");
+          var audioStatus = false;
+        });} else if (audiostatus === false) {
+          $("#audio").each(function() {
+            this.pause();
+            this.currentTime = 0;
+            this.play();
+            this.Play();
+            $("#button_image").attr("src","images/stop.png");
+            var audioStatus = true;
+          });
+        }
+      });
+
+
 
   }
 

@@ -1,0 +1,44 @@
+body {
+	background: no-repeat center center fixed;
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 48px;
+	text-align: center;
+}
+
+#status {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#weather {
+	font-size: 12px;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	text-align: center;
+	background: blue;
+	position: fixed;
+	bottom: 5%; right: 5%;
+}
+
+#weather_text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+#button {
+	position: fixed;
+	bottom: 5%;
+	left: 5%;
+	height: 75px;
+	width: 75px;
+}
+
+#button_image {
+	height: 100%;
+}
