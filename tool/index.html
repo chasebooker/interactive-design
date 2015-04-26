@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Pépito</title>
+</head>
+
+<body>
+	<div id="status"></div>
+	<div id="weather"></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/moment-timezone-data.js"></script>
+	<script type="text/javascript" src="js/moment-timezone.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+		  $.ajax({
+		  url : "http://api.wunderground.com/api/2148427742f34360/geolookup/conditions/q/France/Toulouse.json",
+		  dataType : "jsonp",
+		  success : function(parsed_json) {
+		  var location = parsed_json['location']['city'];
+		  var weather = parsed_json['current_observation']['weather'];
+		  console.log(weather);
+		  }
+		  });
+		});
+	</script>
+</body>
+</html>
