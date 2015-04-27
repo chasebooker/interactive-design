@@ -115,6 +115,8 @@ $.ajax({
 
 });
 
+// Fetches and writes the weather status in the #weather div
+
 jQuery(document).ready(function($) {
   $.ajax({
     url : "http://api.wunderground.com/api/2148427742f34360/geolookup/conditions/q/France/Toulouse.json",
@@ -124,11 +126,32 @@ jQuery(document).ready(function($) {
 
     var location = response['location']['city'];
     var weather = response['current_observation']['weather'];
-    $("#weather_text").html(weather + " <em>chez</em> Pépito");
+    var temp = response['current_observation']['temp_f'];
+
+    console.log(weather);
+
+    $("#weather_text").html(weather);
+
+    function weatherColor(bg,type) {
+      $("#weather").css("background",bg);
+      $("#weather").css("color",type);
+    };
+
+    if (temp <= 32) {
+      weatherColor("white", "black");
+    } else if (32 < temp <= 80) {
+      weatherColor("lightblue", "white");
+    } else {
+      weatherColor("red","white");
+    }
+    console.log(temp)
+
 
   }
   });
 });
+
+// Displays a webcam image from Toulouse if Pépito is outside
 
 jQuery(document).ready(function($) {
   $.ajax({
