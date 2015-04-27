@@ -85,17 +85,14 @@ $.ajax({
       if (audioStatus === true) {
         $("#audio").each(function() {
           this.pause();
-          this.currentTime = 0;
           $("#button_image").attr("src","images/play.png");
-          var audioStatus = false;
-        });} else if (audiostatus === false) {
+          audioStatus = false;
+        });} else if (audioStatus === false) {
           $("#audio").each(function() {
             this.pause();
-            this.currentTime = 0;
             this.play();
-            this.Play();
             $("#button_image").attr("src","images/stop.png");
-            var audioStatus = true;
+            audioStatus = true;
           });
         }
       });
