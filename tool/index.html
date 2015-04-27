@@ -9,7 +9,7 @@
 
 <body>
 	<div id="button">
-			<img src="images/stop.png" id="button_image">
+			<img id="button_image">
 	</div>
 	<div id="status"></div>
 	<div id="nav">
@@ -25,19 +25,7 @@
 	<script type="text/javascript" src="js/moment-timezone-data.js"></script>
 	<script type="text/javascript" src="js/moment-timezone.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<script>
-		jQuery(document).ready(function($) {
-		  $.ajax({
-		  url : "http://api.wunderground.com/api/2148427742f34360/geolookup/conditions/q/France/Toulouse.json",
-		  dataType : "jsonp",
-		  success : function(response) {
-		  var location = response['location']['city'];
-		  var weather = response['current_observation']['weather'];
-		  $("#weather_text").html(weather + " <em>chez</em> Pépito");
-		  }
-		  });
-		});
-	</script>
+	<script type="text/javascript" src="js/weather-status.js"></script>
 	
 
 

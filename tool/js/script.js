@@ -1,11 +1,3 @@
-// 1) Find your API's unique code.
-//    To do this, go to your API's page and copy the string of numbers and letters after "apis/" in the URL
-//    Paste this code in line 10 of the below code after "api/" and before the "?"
-
-// 2) Find your username's unique API key.
-//    When you are logged into Kimono, click your name at the top right and click "Account".
-//    Your API key will appear. Paste this code in line 10 of the below code after "apikey-"
-
 $.ajax({
   "url":"https://www.kimonolabs.com/api/dk3ccga4?apikey=iJgWrYB6oSsnFWLyiVIcGM2Xj4Jjbfsi",
   "crossDomain":true,
@@ -13,10 +5,9 @@ $.ajax({
   //Make a call to the Kimono API following the "url" 
   
   'success': function(response){ 
-  // If the call request was successful and the data was retrieved, this function will create 
-  // a list displaying the data
+  // If the call request was successful and the data was retrieved, 
+  // this function will create a list displaying the data
   
-
     var collection = response.results.collection1;
 
     var lastTweet = collection[0].lastTweet.text;
@@ -28,6 +19,11 @@ $.ajax({
     } else if (currentStatus.indexOf("home") != -1) {
       var status = "in";
     }
+
+    if (status === "out") {
+      $("#weather").css("display","inline");
+    }
+
     console.log(status);
 
     var elapsedTimeType = collection[0].tweetTime.text.slice(-1);
@@ -59,7 +55,7 @@ $.ajax({
         }
         $("#status").html(outside);
         $("#audio").html('<source src="audio/outside.mp3" type="audio/mpeg">');
-        $("body").css("background-image", "url('images/forest.jpg')");
+        // $("body").css("background-image", "url('images/forest.jpg')");
       } else if (a === "in") {
         if (elapsedTimeType === "h") {
           if (elapsedTime.slice(0,-1) === "1") {
@@ -84,25 +80,34 @@ $.ajax({
 
     writeStatus(status);
 
-    var audioStatus = true; // audio autoplays, setting as "true" to start
+    if (status === "in") {
+      var buttonOff = "images/tv_on.png";
+      var buttonOn = "images/tv_off.png";
+    } else if (status === "out") {
+      var buttonOff = "images/bird_on.png";
+      var buttonOn = "images/bird_off.png";
+    }
 
-    // button pauses/plays audio
+    // Sets the image for the pause  and play buttons based on inside/outside status
+    // audio autoplays, so shows "on" button at first
+
+    var audioStatus = true;
+    $("#button_image").attr("src", buttonOff);
 
     $("#button").click(function() {
       if (audioStatus === true) {
         $("#audio").each(function() {
           this.pause();
-          $("#button_image").attr("src","images/play.png");
+          $("#button_image").attr("src", buttonOn);
           audioStatus = false;
-        });} else if (audioStatus === false) {
-          $("#audio").each(function() {
-            this.pause();
-            this.play();
-            $("#button_image").attr("src","images/stop.png");
-            audioStatus = true;
-          });
-        }
-      });
+      });} else if (audioStatus === false) {
+        $("#audio").each(function() {
+          this.play();
+          $("#button_image").attr("src", buttonOff);
+          audioStatus = true;
+        });
+      }
+    });
 
 
 
@@ -110,3 +115,38 @@ $.ajax({
 
 });
 
+jQuery(document).ready(function($) {
+  $.ajax({
+    url : "http://api.wunderground.com/api/2148427742f34360/geolookup/conditions/q/France/Toulouse.json",
+    dataType : "jsonp",
+
+    success : function(response) {
+
+    var location = response['location']['city'];
+    var weather = response['current_observation']['weather'];
+    $("#weather_text").html(weather + " <em>chez</em> Pépito");
+
+  }
+  });
+});
+
+jQuery(document).ready(function($) {
+  $.ajax({
+    url : "http://api.wunderground.com/api/2148427742f34360/webcams/q/France/Toulouse.json",
+    dataType : "jsonp",
+
+    success : function(response) {
+    var webcam = response['webcams'][1]['CURRENTIMAGEURL'];
+    var webcamURL = "'"+webcam+"'"
+
+    var currentStatus = $("#status").html();
+    console.log(currentStatus);
+
+    if (currentStatus.indexOf("outside") != -1) {
+      $('body').css("background-image", "url("+webcamURL+")");
+      $('body').css("background","cover");
+    };
+    
+  }
+  });
+});
