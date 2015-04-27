@@ -35,6 +35,11 @@ $.ajax({
     var elapsedTime = collection[0].tweetTime.text;
     console.log(elapsedTime);
 
+    // This function writes the little content-blurb based on whether
+    // the last tweet was Pépito entering or leaving. The language changes
+    // based on whether the timestamp ends with "h" or "m" and otherwise
+    // just says he's been gone for days.
+
     function writeStatus(a) {
       if (a === "out") {
         if (elapsedTimeType === "h") {
@@ -79,7 +84,9 @@ $.ajax({
 
     writeStatus(status);
 
-    var audioStatus = true;
+    var audioStatus = true; // audio autoplays, setting as "true" to start
+
+    // button pauses/plays audio
 
     $("#button").click(function() {
       if (audioStatus === true) {
