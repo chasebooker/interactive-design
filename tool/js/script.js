@@ -20,10 +20,6 @@ $.ajax({
       var status = "in";
     }
 
-    if (status === "out") {
-      $("#weather").css("display","inline");
-    }
-
     console.log(status);
 
     var elapsedTimeType = collection[0].tweetTime.text.slice(-1);
@@ -133,18 +129,24 @@ jQuery(document).ready(function($) {
     $("#weather_text").html(weather);
 
     function weatherColor(bg,type) {
-      $("#weather").css("background",bg);
+      $("body").css("background-color",bg);
       $("#weather").css("color",type);
     };
 
-    if (temp <= 32) {
-      weatherColor("white", "black");
-    } else if (32 < temp <= 80) {
-      weatherColor("lightblue", "white");
-    } else {
-      weatherColor("red","white");
-    }
-    console.log(temp)
+    var currentStatus = $("#status").html();
+    currentStatus = currentStatus.split(" ")[3]
+    console.log(currentStatus);
+
+    if (currentStatus === "outside") {
+      if (temp <= 32) {
+        weatherColor("white", "black");
+      } else if (32 < temp <= 80) {
+        weatherColor("lightblue", "white");
+      } else {
+        weatherColor("red","white");
+      }
+    };
+     
 
 
   }
@@ -159,15 +161,17 @@ jQuery(document).ready(function($) {
     dataType : "jsonp",
 
     success : function(response) {
-    var webcam = response['webcams'][1]['CURRENTIMAGEURL'];
+    var webcam = response['webcams'][2]['CURRENTIMAGEURL'];
     var webcamURL = "'"+webcam+"'"
 
     var currentStatus = $("#status").html();
+    currentStatus = currentStatus.split(" ")[3]
     console.log(currentStatus);
 
-    if (currentStatus.indexOf("outside") != -1) {
+    if (currentStatus === "outside") {
       $('body').css("background-image", "url("+webcamURL+")");
       $('body').css("background","cover");
+      $("#weather").css("display","inline");
     };
     
   }

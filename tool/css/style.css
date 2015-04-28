@@ -2,10 +2,27 @@ body {
 	background: no-repeat center center fixed;
 	font-family: Arial, sans-serif;
 	color: white;
-	font-size: 48px;
-	line-height: 45px;
+	font-size: 75px;
+	line-height: 70px;
 	text-align: center;
+	letter-spacing: -1px;
 }
+
+header {
+	position: fixed;
+	text-align: center;
+	top: 100px;
+	left: 5%; top: 10%;
+	transform: rotate(-10deg);
+	font-size: 45px;
+	line-height: 43px;
+	color: black;
+	letter-spacing: 0;
+    z-index: -10;
+    font-family: "Georgia", serif;
+}
+
+
 
 #status {
 	position: fixed;
@@ -29,10 +46,11 @@ body {
 	background: black;
 	margin: 10px;
 	position: fixed;
-	top: 5%; left: 5%;
+	bottom: 5%; right: 5%;
 	transform: translateX(-5%);
 	display: none;
 	z-index: 10;
+	letter-spacing: 0;
 }
 
 #weather_text {
