@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 
     console.log(weather);
 
-    $("#weather_text").html(weather);
+    $("#weather_text").html(weather+"<br>"+temp+"&#176;F");
 
     function weatherColor(bg,type) {
       $("body").css("background-color",bg);
@@ -146,7 +146,7 @@ jQuery(document).ready(function($) {
         weatherColor("red","white");
       }
     };
-     
+    
 
 
   }

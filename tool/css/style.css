@@ -14,15 +14,32 @@ header {
 	top: 100px;
 	left: 5%; top: 10%;
 	transform: rotate(-10deg);
-	font-size: 45px;
+	font-size: 90px;
 	line-height: 43px;
-	color: black;
+	color: red;
 	letter-spacing: 0;
     z-index: -10;
     font-family: "Georgia", serif;
 }
 
-
+#twitter_div {
+	font-size: 16px;
+	line-height: 16px;
+	padding: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bold;
+	background: black;
+	margin: 10px;
+	position: fixed;
+	bottom: 5%; left: 5%;
+	transform: translateX(5%);
+	display: none;
+	z-index: 11;
+	letter-spacing: 0;
+}
 
 #status {
 	position: fixed;
@@ -58,6 +75,17 @@ header {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 100%;
+}
+
+#temperature_text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+
+#webcam {
+	z-index: 999;
 }
 
 /*#nav {
