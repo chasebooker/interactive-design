@@ -18,7 +18,9 @@ $.ajax({
       var status = "out";
     } else if (currentStatus.indexOf("home") != -1) {
       var status = "in";
-    }
+    };
+
+    status = "out"; // overriding to use as example
 
     console.log(status);
 
@@ -27,15 +29,16 @@ $.ajax({
     var elapsedTime = collection[0].tweetTime.text;
     console.log(elapsedTime);
 
-    // Breaks if he is gone for more than 24 hours:
-    // making a temporary amount for presenting
-
-    // elapsedTime = 3;
-
     // This function writes the little content-blurb based on whether
     // the last tweet was Pépito entering or leaving. The language changes
     // based on whether the timestamp ends with "h" or "m" and otherwise
     // just says he's been gone for days.
+
+    // Overwriting as example
+
+    elapsedTime = "8h";
+    elapsedTimeType = "h";
+    status = "out";
 
     function writeStatus(a) {
       if (a === "out") {
@@ -89,29 +92,6 @@ $.ajax({
       var buttonOn = "images/bird_off.png";
     }
 
-    // Change background based on the time of day
-    // if Pépito is outside
-
-    var date = new Date();
-    console.log(date);
-    var time = date.getUTCHours();
-    console.log(time);
-
-    if (status === "out") {
-      if (time < 6 || time > 18) {
-        $("body").css("background-color", "#404041");
-        $("#moon").css("display", "inline")
-        $("#weather").css("background","white");
-        $("#weather").css("color","black");
-        console.log("Nighttime");
-      } else {
-        $("body").css("background-color", "#A9CCFF");
-        $("#sun").css("display", "inline");
-        console.log("Daytime");
-      };
-    };
-
-
     // Sets the image for the pause  and play buttons based on inside/outside status
     // audio autoplays, so shows "on" button at first
 
@@ -156,24 +136,28 @@ jQuery(document).ready(function($) {
 
     $("#weather_text").html(weather+"<br>"+temp+"&#176;F");
 
-    // function weatherColor(bg,type) {
-    //   $("body").css("background-color",bg);
-    //   $("#weather").css("color",type);
-    // };
+    function weatherColor(bg,type) {
+      $("body").css("background-color",bg);
+      $("#weather").css("color",type);
+    };
 
-    // var currentStatus = $("#status").html();
-    // currentStatus = currentStatus.split(" ")[3]
-    // console.log(currentStatus);
+    var currentStatus = $("#status").html();
+    currentStatus = currentStatus.split(" ")[3]
+    console.log(currentStatus);
 
-    // if (currentStatus === "outside") {
-    //   if (temp <= 32) {
-    //     weatherColor("white", "black");
-    //   } else if (32 < temp <= 80) {
-    //     weatherColor("lightblue", "white");
-    //   } else {
-    //     weatherColor("red","white");
-    //   }
-    // };
+    // Change background based on the time of day
+    // if Pépito is outside
+
+    var date = new Date();
+    console.log(date);
+    var time = date.getUTCHours();
+    console.log(time);
+
+
+    $("body").css("background-color", "#A9CCFF");
+    $("#sun").css("display", "inline");
+
+
     
 
 

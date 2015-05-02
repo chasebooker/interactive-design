@@ -12,7 +12,7 @@ header {
 	position: fixed;
 	text-align: center;
 	top: 100px;
-	left: 5%; top: 10%;
+	left: 5%; bottom: 10%;
 	transform: rotate(-10deg);
 	font-size: 90px;
 	line-height: 43px;
@@ -46,9 +46,26 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 
+}
+
+#celestial_bodies {
+	position: fixed;
+	width: 250px;
+	top: 5%;
+	z-index: -100;
+}
+
+#sun {
+	width: 100px;
+	display: none;
+}
+
+#moon {
+	width: 100px;
+	display: none;
 }
 
 #weather {
@@ -104,8 +121,12 @@ header {
 	height: 100%;
 }
 
-#flag {
+footer {
 	position: fixed;
-	top: 5%;
-	left: 5%;
+	bottom: 0;
+	left: -10px;
+	width: 105%;
+	height: 100px;
+	z-index: -1000;
+	background-repeat: repeat-x;
 }

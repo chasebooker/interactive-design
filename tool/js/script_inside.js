@@ -27,10 +27,11 @@ $.ajax({
     var elapsedTime = collection[0].tweetTime.text;
     console.log(elapsedTime);
 
-    // Breaks if he is gone for more than 24 hours:
-    // making a temporary amount for presenting
+    // Overwriting as example
 
-    // elapsedTime = 3;
+    elapsedTime = "3h";
+    elapsedTimeType = "h";
+    status = "in";
 
     // This function writes the little content-blurb based on whether
     // the last tweet was Pépito entering or leaving. The language changes
@@ -78,6 +79,8 @@ $.ajax({
         $("body").css("background-image", "url('images/catbed.jpg')");
       }
     }
+
+    status = "in";
 
     writeStatus(status);
 
@@ -195,6 +198,8 @@ jQuery(document).ready(function($) {
     var currentStatus = $("#status").html();
     currentStatus = currentStatus.split(" ")[3]
     console.log(currentStatus);
+
+    currentStatus = "inside";
 
     if (currentStatus === "outside") {
       $('body').css("background-image", "url("+webcamURL+")");
